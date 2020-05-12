@@ -7,7 +7,7 @@
 /* Fine reset */
 
 /* Inizio elementi ripetuti */
-.ms_main::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -30,32 +30,30 @@
 .debug4 {
   background-color: #ff7b25;
 }
-.box {
-  height: 100px;
-  width: 100px;
-}
 /* Inizio debug */
 
 /* INIZIO MAIN */
 .ms_main {
   height: calc(100vh - 100px);
 }
-.ms_nav {
-  float: left;
+.ms_sidebar {
   height: 100%;
-  width: 100px;
+  width: 200px;
 }
-
 .ms_main_content {
-  float: left;
   height: 100%;
-  width: calc(100% - 100px);
+  width: calc(100% - 200px);
   overflow: auto;
+  padding-top: 100px;
 }
-
+.ms_uprade {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 200px);
+  text-align: right;
+}
 /* FINE MAIN */
-
-
 
 /* INIZIO PLAYER */
 .ms_player {
