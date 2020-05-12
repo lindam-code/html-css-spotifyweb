@@ -44,8 +44,14 @@
   height: 100%;
   width: calc(100% - 200px);
   overflow-y: auto;
-  padding-top: 100px;
 }
+
+/* Dare il margin top al menu di navigazione */
+.ms_main_content h1 {
+  margin-top: 100px;
+}
+/* Dare il margin top al menu di navigazione */
+
 .ms_uprade {
   height: 100px;
   position: fixed;
@@ -80,5 +86,14 @@
 /* INIZIO PLAYER */
 .ms_player {
   height: 100px;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+.ms_song, .ms_video_sound {
+  flex-basis: 20%;
+}
+.ms_controls {
+  flex-basis: 50%;
 }
 /* FINE PLAYER */
