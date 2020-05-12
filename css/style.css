@@ -1,0 +1,38 @@
+/* Inizio reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Fine reset */
+
+/* Inizio debug */
+.debug {
+  background-color: #feb236;
+}
+.debug2 {
+  background-color: #6b5b95;
+}
+.debug3 {
+  background-color: #d64161;
+}
+.debug4 {
+  background-color: #ff7b25;
+}
+/* Inizio debug */
+
+/* INIZIO MAIN */
+.ms_main {
+  height: calc(100vh - 100px);
+  overflow-x: auto;
+}
+
+/* FINE MAIN */
+
+
+
+/* INIZIO PLAYER */
+.ms_player {
+  height: 100px;
+}
+/* FINE PLAYER */
