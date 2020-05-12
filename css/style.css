@@ -43,7 +43,7 @@
 .ms_main_content {
   height: 100%;
   width: calc(100% - 200px);
-  overflow: auto;
+  overflow-y: auto;
   padding-top: 100px;
 }
 .ms_uprade {
@@ -53,6 +53,28 @@
   width: calc(100% - 200px);
   text-align: right;
 }
+
+/* Inizio sidebar a sinistra */
+.ms_logo {
+  height: 80px;
+}
+.ms_menu {
+  height: 80px;
+}
+.ms_playlist {
+  height: 80px;
+}
+.ms-install {
+  height: 40px;
+}
+.ms-account {
+  height: 40px;
+}
+.ms_plylist_list {
+  height: calc(100% - 320px);
+  overflow-y: auto;
+}
+/* Fine sidebar sinistra */
 /* FINE MAIN */
 
 /* INIZIO PLAYER */
