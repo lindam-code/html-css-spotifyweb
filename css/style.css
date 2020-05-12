@@ -6,12 +6,23 @@
 }
 /* Fine reset */
 
+/* Inizio elementi ripetuti */
+.ms_main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float {
+  float: left;
+}
+/* Fine elementi ripetuti */
+
 /* Inizio debug */
 .debug {
-  background-color: #feb236;
+  background-color: #6b5b95;
 }
 .debug2 {
-  background-color: #6b5b95;
+  background-color: #feb236;
 }
 .debug3 {
   background-color: #d64161;
@@ -19,12 +30,27 @@
 .debug4 {
   background-color: #ff7b25;
 }
+.box {
+  height: 100px;
+  width: 100px;
+}
 /* Inizio debug */
 
 /* INIZIO MAIN */
 .ms_main {
   height: calc(100vh - 100px);
-  overflow-x: auto;
+}
+.ms_nav {
+  float: left;
+  height: 100%;
+  width: 100px;
+}
+
+.ms_main_content {
+  float: left;
+  height: 100%;
+  width: calc(100% - 100px);
+  overflow: auto;
 }
 
 /* FINE MAIN */
