@@ -147,7 +147,19 @@ main {
   text-transform: uppercase;
 }
 /* Fine top bar per upgrade */
-
+/* Inizio navbar main */
+.navbar_main {
+  width: 60%;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.navbar_main ul  {
+  display: flex;
+  justify-content: space-between;
+}
+/* Fine navbar main */
 /* Fine main content */
 /* FINE MAIN */
 
