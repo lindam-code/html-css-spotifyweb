@@ -113,7 +113,7 @@ main {
 /* Fine main content */
 /* FINE MAIN */
 
-/* INIZIO PLAYER */
+/* INIZIO FOOTER */
 footer {
   height: 100px;
   background-color: #282828;
@@ -123,44 +123,44 @@ footer {
   align-items: center;
   padding: 0 5px;
 }
-.ms_gray {
+.gray {
   color: #5a5a5a;
 }
 
 /* Inizio song */
-.ms_song {
+.song {
   flex-basis: 25%;
   flex-shrink: 0;
   display: flex;
   align-items: center;
 }
-.ms_song_features {
+.song_features {
   flex-shrink: 0;
 }
-.ms_song img {
+.song img {
   width: 50px;
   vertical-align: middle;
 }
-.ms_title_song {
+.song_title {
   display: inline-block;
   vertical-align: middle;
   font-size: 10px;
   margin-right: 20px;
 }
-.ms_like_folder {
+.song_like {
   display: inline-block;
 }
-.ms_song i {
+.song i {
   margin: 0 5px;
 }
 /* Fine song */
-.ms_controls {
+.player {
   flex-basis: 40%;
   text-align: center;
 }
-.ms_video_sound {
+.controls {
   flex-basis: 25%;
   text-align: right;
 }
 
-/* FINE PLAYER */
+/* FINE FOOTER */
