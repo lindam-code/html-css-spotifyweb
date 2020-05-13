@@ -21,11 +21,6 @@ a {
 /* Fine regole generali */
 
 /* Inizio elementi ripetuti */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .float {
   float: left;
 }
