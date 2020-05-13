@@ -7,7 +7,7 @@
 /* Fine reset */
 
 /* Inizio regole generali */
-.ms_wrapper {
+.main_wrapper {
   background-color: #000;
   height: 100vh;
   width: 100%;
@@ -21,9 +21,7 @@ a {
 /* Fine regole generali */
 
 /* Inizio elementi ripetuti */
-.float {
-  float: left;
-}
+
 /* Fine elementi ripetuti */
 
 /* Inizio debug */
@@ -41,49 +39,33 @@ a {
 }
 /* Inizio debug */
 
+
 /* INIZIO MAIN */
-.ms_main {
+main {
   height: calc(100% - 100px);
 }
-.ms_sidebar {
+.sidebar {
+  float: left;
   height: 100%;
   width: 200px;
 }
-.ms_main_content {
+.main_content {
+  float: left;
   height: 100%;
   width: calc(100% - 200px);
   overflow-y: auto;
   background-color: #141922;
   color: #fff;
+  padding-top: 100px;
 }
-
-/* Dare il margin top al menu di navigazione */
-.ms_main_content h1 {
-  margin-top: 100px;
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 80px;
+  }
+  .main_content {
+    width: calc(100% - 80px);
+  }
 }
-/* Dare il margin top al menu di navigazione */
-
-/* Inizio top bar per upgrade */
-.ms_upgrade_topbar {
-  height: 100px;
-  position: fixed;
-  top: 0;
-  width: calc(100% - 200px);
-  text-align: right;
-  color: white;
-  background-color: rgba(8, 11, 18, 0.9);
-  line-height: 100px;
-  padding-right: 5px;
-  /* colore da sistemare */
-}
-.ms_upgrade {
-  border: 1px solid white;
-  border-radius: 15px;
-  padding: 10px 30px;
-  text-transform: uppercase;
-}
-/* Fine top bar per upgrade */
-
 /* Inizio sidebar a sinistra */
 .ms_logo {
   height: 80px;
@@ -105,10 +87,34 @@ a {
   overflow-y: auto;
 }
 /* Fine sidebar sinistra */
+
+/* Inizio main content */
+/* Inizio top bar per upgrade */
+.topbar_upgrade {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 200px);
+  text-align: right;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 100px;
+  padding-right: 5px;
+}
+.btn_upgrade {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+/* Fine top bar per upgrade */
+
+/* Fine main content */
 /* FINE MAIN */
 
 /* INIZIO PLAYER */
-.ms_player {
+footer {
   height: 100px;
   background-color: #282828;
   color: #fff;
