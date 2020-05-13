@@ -122,6 +122,8 @@ a {
   flex-basis: 25%;
   color: #fff;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 .ms_gray {
   color: #5a5a5a;
@@ -142,6 +144,9 @@ a {
 }
 .ms_song i {
   margin: 0 5px;
+}
+.ms_song_features {
+  flex-shrink: 0;
 }
 /* Fine song */
 .ms_controls {
