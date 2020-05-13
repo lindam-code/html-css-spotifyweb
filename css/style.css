@@ -24,7 +24,9 @@ ul li {
 /* Fine regole generali */
 
 /* Inizio elementi ripetuti */
-
+.grey {
+  color: #5a5a5a;
+}
 /* Fine elementi ripetuti */
 
 /* Inizio debug */
@@ -52,6 +54,10 @@ main {
   height: 100%;
   width: 200px;
   overflow: hidden;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
 }
 .main_content {
   float: left;
@@ -71,16 +77,52 @@ main {
   }
 }
 /* Inizio sidebar a sinistra */
+/* Inizio elementi layout */
 .nav_element {
-  height: 80px;
   overflow: hidden;
+}
+.logo {
+  height: 60px;
+  width: 80%;
+}
+.menu {
+  height: 120px;
 }
 .playlist_container {
   height: calc(100% - 240px);
 }
 .playlist {
   overflow-y: auto;
-  height: 60%;
+  height: 80%;
+}
+.account {
+  height: 60px;
+}
+/* Fine elementi layout */
+.nav_element img {
+  height: 25px;
+  vertical-align: middle;
+}
+.nav_element i {
+  font-size: 25px;
+  vertical-align: middle;
+}
+.menu li {
+  margin: 5px 0;
+  line-height: 25px;
+}
+.playlist_container h3 {
+  margin-bottom: 10px;
+}
+.sidebar .make_playlist {
+  font-size: 50px;
+  vertical-align: middle;
+}
+.playlist li {
+  margin: 15px 0;
+}
+.account p {
+  margin-top: 5px;
 }
 /* Fine sidebar sinistra */
 
@@ -119,10 +161,6 @@ footer {
   align-items: center;
   padding: 0 5px;
 }
-.gray {
-  color: #5a5a5a;
-}
-
 /* Inizio song */
 .song {
   flex-basis: 25%;

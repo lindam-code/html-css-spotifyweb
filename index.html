@@ -14,20 +14,20 @@
       <main>
 
         <!-- Inizio sidebar a sinistra -->
-        <nav class="sidebar debug2">
-          <div class="nav_element logo">
-            <h1>SPOTIFY</h1>
+        <nav class="sidebar">
+          <div class="logo">
+            <img src="img/logo.svg" alt="logo Spotify">
           </div>
           <ul class="nav_element menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Cerca</a></li>
-            <li><a href="#">La tua libreria</a></li>
+            <li><a href="#"><img class="home_icon" src="img/home.svg" alt="home icon">&nbsp;Home</a></li>
+            <li class="grey"><a href="#"><i class="fas fa-search search"></i>&nbsp;Cerca</a></li>
+            <li class="grey"><a href="#"><img src="img/libreria.svg" alt="libreria">&nbsp;La tua libreria</a></li>
           </ul>
 
-          <div class="playlist_container">
-            <h2>PLAYLIST</h2>
-            <a href="#">Crea Playlist</a>
-            <ul class="playlist">
+          <div class="nav_element playlist_container">
+            <h3>PLAYLIST</h3>
+            <a class="grey" href="#"><i class="fas fa-plus-square make_playlist"></i>&nbsp;Crea Playlist</a>
+            <ul class="playlist grey">
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
@@ -41,9 +41,9 @@
 
 
           <div class="nav_element account">
-            <a href="#">Install App</a>
-            <hr>
-            <p>John Doe</p>
+            <a class="grey" href="#"><img src="img/download.svg" alt="download">&nbsp;Install App</a>
+            <hr class="grey">
+            <p><i class="far fa-user-circle"></i>&nbsp;John Doe</p>
           </div>
 
         </nav>
@@ -79,10 +79,10 @@
             <img src="img/sinister.jpeg" alt="sinister">
             <div class="song_title">
               <h3>Sinister</h3>
-              <p class="gray">Brano Nome</p>
+              <p class="grey">Brano Nome</p>
             </div>
           </div>
-          <div class="song_like gray">
+          <div class="song_like grey">
             <i class="far fa-heart"></i>
             <i class="far fa-folder"></i>
           </div>
