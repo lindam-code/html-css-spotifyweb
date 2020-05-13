@@ -6,6 +6,16 @@
 }
 /* Fine reset */
 
+/* Inizio regole generali */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Fine regole generali */
+
 /* Inizio elementi ripetuti */
 .clearfix::after {
   content: "";
@@ -44,6 +54,8 @@
   height: 100%;
   width: calc(100% - 200px);
   overflow-y: auto;
+  background-color: #141922;
+  color: #fff;
 }
 
 /* Dare il margin top al menu di navigazione */
@@ -52,13 +64,26 @@
 }
 /* Dare il margin top al menu di navigazione */
 
-.ms_uprade {
+/* Inizio top bar per upgrade */
+.ms_upgrade_topbar {
   height: 100px;
   position: fixed;
   top: 0;
   width: calc(100% - 200px);
   text-align: right;
+  color: white;
+  background-color: rgba(8, 11, 18, 0.9);
+  line-height: 100px;
+  padding-right: 5px;
+  /* colore da sistemare */
 }
+.ms_upgrade {
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+/* Fine top bar per upgrade */
 
 /* Inizio sidebar a sinistra */
 .ms_logo {
@@ -90,10 +115,16 @@
   display: flex;
   justify-content: space-between;
 }
-.ms_song, .ms_video_sound {
+.ms_song {
   flex-basis: 20%;
 }
 .ms_controls {
-  flex-basis: 50%;
+  flex-basis: 40%;
+  text-align: center;
 }
+.ms_video_sound {
+  flex-basis: 20%;
+  text-align: right;
+}
+
 /* FINE PLAYER */
