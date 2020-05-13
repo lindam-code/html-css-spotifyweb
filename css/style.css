@@ -155,6 +155,7 @@ footer {
 .player {
   flex-basis: 40%;
   text-align: center;
+  flex-grow: 1;
 }
 .player ul li {
   display: inline-block;
@@ -167,31 +168,39 @@ footer {
 .player .container_flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .time_bar {
   width: 80%;
-  background-color: yellow;
 }
-.time_used {
-  display: inline-block;
+.bar_passed {
   content: "";
   background-color: #c1c1c1;
   height: 3px;
-  width: 25%;
+  width: 30%;
 }
-.time_to_use {
-  display: inline-block;
+.bar_remaining {
   content: "";
   background-color: #5a5a5a;
   height: 3px;
-  width: 73%;
+  width: 98%;
 }
-/* Fineo player */
+/* Fine player */
 
 /* Inizio controls */
 .controls {
   flex-basis: 25%;
+  flex-shrink: 0;
   text-align: right;
+}
+.controls ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.controls .sound_bar {
+  vertical-align: middle;
+  display: inline-block;
+  width: 100px;
 }
 /* Fine controls */
 /* FINE FOOTER */
