@@ -48,6 +48,7 @@ main {
   float: left;
   height: 100%;
   width: 200px;
+  overflow: hidden;
 }
 .main_content {
   float: left;
@@ -67,24 +68,16 @@ main {
   }
 }
 /* Inizio sidebar a sinistra */
-.ms_logo {
+.nav_element {
   height: 80px;
+  overflow: hidden;
 }
-.ms_menu {
-  height: 80px;
+.playlist_container {
+  height: calc(100% - 240px);
 }
-.ms_playlist {
-  height: 80px;
-}
-.ms-install {
-  height: 40px;
-}
-.ms-account {
-  height: 40px;
-}
-.ms_plylist_list {
-  height: calc(100% - 320px);
+.playlist {
   overflow-y: auto;
+  height: 60%;
 }
 /* Fine sidebar sinistra */
 
