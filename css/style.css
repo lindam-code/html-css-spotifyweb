@@ -114,16 +114,42 @@ a {
   background-color: #282828;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
+/* Inizio song */
 .ms_song {
-  flex-basis: 20%;
+  flex-basis: 25%;
+  color: #fff;
+  flex-shrink: 0;
 }
+.ms_gray {
+  color: #5a5a5a;
+}
+.ms_song img {
+  width: 50px;
+  vertical-align: middle;
+}
+.ms_title_song {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 10px;
+  margin-right: 20px;
+}
+.ms_like_folder {
+  display: inline-block;
+
+}
+.ms_song i {
+  margin: 0 5px;
+}
+/* Fine song */
 .ms_controls {
   flex-basis: 40%;
   text-align: center;
 }
 .ms_video_sound {
-  flex-basis: 20%;
+  flex-basis: 25%;
   text-align: right;
 }
 
