@@ -18,6 +18,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ul li {
+  list-style-type: none;
+}
 /* Fine regole generali */
 
 /* Inizio elementi ripetuti */
@@ -147,13 +150,48 @@ footer {
   margin: 0 5px;
 }
 /* Fine song */
+
+/* Inizio player */
 .player {
   flex-basis: 40%;
   text-align: center;
 }
+.player ul li {
+  display: inline-block;
+  font-size: 17px;
+  margin: 0 15px;
+}
+.player .play {
+  font-size: 22px;
+}
+.player .container_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.time_bar {
+  width: 80%;
+  background-color: yellow;
+}
+.time_used {
+  display: inline-block;
+  content: "";
+  background-color: #c1c1c1;
+  height: 3px;
+  width: 25%;
+}
+.time_to_use {
+  display: inline-block;
+  content: "";
+  background-color: #5a5a5a;
+  height: 3px;
+  width: 73%;
+}
+/* Fineo player */
+
+/* Inizio controls */
 .controls {
   flex-basis: 25%;
   text-align: right;
 }
-
+/* Fine controls */
 /* FINE FOOTER */
