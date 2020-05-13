@@ -7,7 +7,11 @@
 /* Fine reset */
 
 /* Inizio regole generali */
-body {
+.ms_wrapper {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  min-width: 500px;
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
@@ -44,7 +48,7 @@ a {
 
 /* INIZIO MAIN */
 .ms_main {
-  height: calc(100vh - 100px);
+  height: calc(100% - 100px);
 }
 .ms_sidebar {
   height: 100%;
@@ -112,21 +116,25 @@ a {
 .ms_player {
   height: 100px;
   background-color: #282828;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
 }
+.ms_gray {
+  color: #5a5a5a;
+}
+
 /* Inizio song */
 .ms_song {
   flex-basis: 25%;
-  color: #fff;
   flex-shrink: 0;
   display: flex;
   align-items: center;
 }
-.ms_gray {
-  color: #5a5a5a;
+.ms_song_features {
+  flex-shrink: 0;
 }
 .ms_song img {
   width: 50px;
@@ -140,13 +148,9 @@ a {
 }
 .ms_like_folder {
   display: inline-block;
-
 }
 .ms_song i {
   margin: 0 5px;
-}
-.ms_song_features {
-  flex-shrink: 0;
 }
 /* Fine song */
 .ms_controls {
