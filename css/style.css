@@ -317,19 +317,39 @@ footer {
 .time_bar {
   width: 80%;
 }
-.bar_passed {
+/* Fine player */
+
+/* Elemento barra */
+.bar_start {
   content: "";
   background-color: #c1c1c1;
   height: 3px;
   width: 30%;
+  text-align: right;
+  position: relative;
 }
-.bar_remaining {
+.bar_circle {
+  display: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+  position: absolute;
+  top: -3px;
+}
+.generic_bar:hover .bar_circle {
+  display: inline-block;
+}
+.generic_bar:hover .bar_start {
+  background-color: #adff2f;
+}
+.bar_end {
   content: "";
   background-color: #5a5a5a;
   height: 3px;
   width: 98%;
 }
-/* Fine player */
+/* Fine elemento barra */
 
 /* Inizio controls */
 .controls {
@@ -342,7 +362,7 @@ footer {
   margin: 0 3px;
   font-size: 10px;
 }
-.controls .sound_bar {
+.sound_bar {
   vertical-align: middle;
   display: inline-block;
   width: 70px;
