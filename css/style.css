@@ -132,6 +132,9 @@ main {
 .account p {
   margin-top: 5px;
 }
+.sidebar a:hover {
+  color: #fff;
+}
 /* Fine sidebar sinistra */
 
 /* Inizio main content */
@@ -176,6 +179,9 @@ main {
 }
 .navbar_main ul li {
   margin: 0 15px;
+}
+.navbar_main a:hover {
+  color: #fff;
 }
 /* Fine navbar main */
 
@@ -282,6 +288,9 @@ footer {
 .song i {
   margin: 0 5px;
 }
+.song i:hover {
+  color: #fff;
+}
 /* Fine song */
 
 /* Inizio player */
@@ -296,6 +305,9 @@ footer {
 }
 .player .play {
   font-size: 20px;
+}
+.player .play:hover {
+  transform: scale(1.5);
 }
 .player .container_flex {
   display: flex;
