@@ -350,5 +350,8 @@ footer {
   .music_item {
     flex-basis: 300px;
   }
+  .cover {
+    height: 280px;
+  }
 }
 /* FINE MEDIA QUERY */
