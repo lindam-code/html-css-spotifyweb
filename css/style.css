@@ -11,7 +11,7 @@
   background-color: #000;
   height: 100vh;
   width: 100%;
-  min-width: 500px;
+  /* min-width: 500px; */
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
@@ -68,14 +68,6 @@ main {
   color: #fff;
   padding-top: 100px;
 }
-@media screen and (max-width: 767px) {
-  .sidebar {
-    width: 80px;
-  }
-  .main_content {
-    width: calc(100% - 80px);
-  }
-}
 /* Inizio sidebar a sinistra */
 /* Inizio elementi layout */
 .nav_element {
@@ -130,10 +122,10 @@ main {
 /* Inizio top bar per upgrade */
 .topbar_upgrade {
   height: 100px;
+  width: calc(100% - 200px);
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 200px);
   text-align: right;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -149,15 +141,18 @@ main {
 /* Fine top bar per upgrade */
 /* Inizio navbar main */
 .navbar_main {
-  width: 60%;
-  margin: auto;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
 }
-.navbar_main ul  {
+.navbar_main .flex_list  {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  line-height: 50px;
+  flex-wrap: wrap;
+}
+.navbar_main ul li {
+  margin: 0 15px;
 }
 /* Fine navbar main */
 /* Fine main content */
@@ -254,3 +249,17 @@ footer {
 }
 /* Fine controls */
 /* FINE FOOTER */
+
+/* INIZIO MEDIA QUERY */
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 80px;
+  }
+  .main_content {
+    width: calc(100% - 80px);
+  }
+  .topbar_upgrade {
+    width: calc(100% - 80px);
+  }
+}
+/* FINE MEDIA QUERY */
