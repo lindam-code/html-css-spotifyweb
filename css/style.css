@@ -27,6 +27,17 @@ ul li {
 .grey {
   color: #5a5a5a;
 }
+.current_page {
+  border-left: 2px solid #adff2f;
+}
+.current_page_hr {
+  content: "";
+  background-color: #adff2f;
+  height: 2px;
+  width: 50px;
+  margin-top: -15px;
+  margin-left: 12px;
+}
 /* Fine elementi ripetuti */
 
 /* Inizio debug */
