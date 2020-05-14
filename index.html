@@ -16,12 +16,13 @@
         <!-- Inizio sidebar a sinistra -->
         <nav class="sidebar">
           <div class="logo">
-            <img src="img/logo.svg" alt="logo Spotify">
+            <img class="logo_normal" src="img/logo.svg" alt="logo Spotify">
+            <img class="logo_small" src="img/logo-small.svg" alt="logo Spotify">
           </div>
           <ul class="nav_element menu">
-            <li><a href="#"><img class="home_icon" src="img/home.svg" alt="home icon">&nbsp;Home</a></li>
-            <li class="grey"><a href="#"><i class="fas fa-search search"></i>&nbsp;Cerca</a></li>
-            <li class="grey"><a href="#"><img src="img/libreria.svg" alt="libreria">&nbsp;La tua libreria</a></li>
+            <li><a href="#"><img class="home_icon" src="img/home.svg" alt="home icon"><span class="display_none_small">&nbsp;Home</span></a></li>
+            <li class="grey"><a href="#"><i class="fas fa-search search"></i><span class="display_none_small">&nbsp;Cerca</span></a></li>
+            <li class="grey"><a href="#"><img src="img/libreria.svg" alt="libreria"><span class="display_none_small">&nbsp;La tua libreria</span></a></li>
           </ul>
 
           <div class="nav_element playlist_container">
@@ -40,9 +41,9 @@
           </div>
 
           <div class="nav_element account">
-            <a class="grey" href="#"><img src="img/download.svg" alt="download">&nbsp;Install App</a>
+            <a class="grey" href="#"><img src="img/download.svg" alt="download"><span class="display_none_small">&nbsp;Install App</span></a>
             <hr class="grey">
-            <p><i class="far fa-user-circle"></i>&nbsp;John Doe</p>
+            <p><i class="far fa-user-circle"></i><span class="display_none_small">&nbsp;John Doe</span></p>
           </div>
 
         </nav>
