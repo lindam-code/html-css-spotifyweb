@@ -141,8 +141,14 @@ main {
 .btn_upgrade {
   border: 1px solid white;
   border-radius: 15px;
-  padding: 10px 30px;
+  padding: 5px 15px;
   text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 15px;
+}
+.btn_upgrade:hover {
+  padding: 10px 30px;
+  font-size: 15px;
 }
 /* Fine top bar per upgrade */
 /* Inizio navbar main */
