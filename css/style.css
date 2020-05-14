@@ -11,7 +11,7 @@
   background-color: #000;
   height: 100vh;
   width: 100%;
-  /* min-width: 500px; */
+  min-width: 500px;
   font-family: Helvetica, Arial, sans-serif;
 }
 a {
@@ -247,15 +247,14 @@ footer {
 .player {
   flex-basis: 40%;
   text-align: center;
-  flex-grow: 1;
 }
 .player ul li {
   display: inline-block;
-  font-size: 17px;
-  margin: 0 15px;
+  font-size: 15px;
+  margin: 0 5px;
 }
 .player .play {
-  font-size: 22px;
+  font-size: 20px;
 }
 .player .container_flex {
   display: flex;
@@ -287,12 +286,13 @@ footer {
 }
 .controls ul li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 3px;
+  font-size: 10px;
 }
 .controls .sound_bar {
   vertical-align: middle;
   display: inline-block;
-  width: 100px;
+  width: 70px;
 }
 /* Fine controls */
 /* FINE FOOTER */
