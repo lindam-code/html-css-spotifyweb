@@ -324,7 +324,10 @@ footer {
 /* INIZIO MEDIA QUERY */
 @media screen and (max-width: 767px) {
   .sidebar {
-    width: 80px;
+    width: 60px;
+  }
+  .logo {
+    width: 90%;
   }
   .sidebar .logo_normal {
     display: none;
@@ -339,13 +342,24 @@ footer {
     display: none;
   }
   .sidebar .menu {
-    height: calc(100% - 120px);
+    height: calc(100% - 140px);
+  }
+  .nav_element img {
+    height: 35px;
+    text-align: center;
+  }
+  .nav_element i {
+    font-size: 35px;
+    text-align: center;
+  }
+  .account {
+    height: 80px;
   }
   .main_content {
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
   }
   .topbar_upgrade {
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
   }
   .music_item {
     flex-basis: 300px;
