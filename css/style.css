@@ -255,10 +255,10 @@ main {
   display: none;
   font-size: 25px;
 }
-.cover:hover .filter {
+.music_item:hover .filter {
   background-color: rgba(0,0,0, 0.5);
 }
-.cover:hover .filter i {
+.music_item:hover .filter i {
   display: block;
 }
 /* Fine contenuto principale */
