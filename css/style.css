@@ -205,6 +205,11 @@ main {
 }
 .music_container img {
   width: 100%;
+  display: block; /*Per togliere i 4px che trovo sotto all'img che di default è inline*/
+  /* vertical-align: middle; */ /*Per togliere i 4px che trovo sotto all'img che di default è inline*/
+}
+.music_item h5 {
+  margin-top: 5px;
 }
 .main_content p {
   margin-top: 5px;
