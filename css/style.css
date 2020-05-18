@@ -317,35 +317,41 @@ footer {
 /* Fine player */
 
 /* Elemento barra */
-.bar_start {
-  content: "";
-  background-color: #c1c1c1;
-  height: 3px;
-  width: 30%;
-  text-align: right;
-  position: relative;
-}
-.bar_circle {
-  display: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #c1c1c1;
-  position: absolute;
-  top: -3px;
-}
-.generic_bar:hover .bar_circle {
-  display: inline-block;
-}
-.generic_bar:hover .bar_start {
-  background-color: #adff2f;
-}
-.bar_end {
+.progress_bar {
   content: "";
   background-color: #5a5a5a;
   height: 3px;
   width: 98%;
+  position: relative;
 }
+.current_progress {
+  display: inline-block;
+  content: "";
+  background-color: #c1c1c1;
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.current_progress::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+}
+.generic_bar:hover .current_progress {
+  background-color: #adff2f;
+}
+.generic_bar:hover .current_progress::after {
+  display: block;
+}
+
 /* Fine elemento barra */
 
 /* Inizio controls */
